@@ -91,7 +91,7 @@ local function changeText(textFrame, default)
 	if default == 1 then
 		textFrame:SetText(mh_name .. "/" .. (oh_name or "empty") .. "\n" .. default_text)
 	else
-		textFrame:SetText(mh_name .. "/" .. (oh_name or "empty") .. "\n" .. "last: " .. last .. "s, avg: " .. safeDiv(sum, cnt) .. "s, kills: " .. cnt)
+		textFrame:SetText(mh_name .. "/" .. (oh_name or "empty") .. "\n" .. "last: " .. last .. "s, avg: " .. math.floor(safeDiv(sum, cnt)+0.5) .. "s, kills: " .. cnt)
 	end
 end
 
