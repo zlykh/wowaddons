@@ -1,0 +1,7 @@
+## Interface: 11302
+## Title-enUS: Kill Timer
+## Author: https://github.com/zlykh
+## Version: 4.1.0
+## DefaultState: enabled
+
+KillTimer.lua
