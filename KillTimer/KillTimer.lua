@@ -155,7 +155,7 @@ local function CoreFrame_OnEvent(self, event, ...)
 		addon_data.core.combat_dict[uidCurr].last = last
 		addon_data.core.combat_dict[uidCurr].sum = sum
 		addon_data.core.combat_dict[uidCurr].counter = cnt
-		changeText(textFrame)
+		changeText(addon_data.core.text)
     elseif event == "PLAYER_REGEN_DISABLED" then
 		addon_data.core.start = GetServerTime()
 	 elseif event == "UNIT_INVENTORY_CHANGED" then
